@@ -1,0 +1,179 @@
+body {
+  margin: auto;
+  width:95%;
+}
+
+.sidebar {
+        grid-area: sidebar;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .header {
+        grid-area: header;
+        
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+
+    .wrapper {
+        display: grid;
+    grid-gap: 5px;
+        grid-template-columns: 15% 85%;
+        grid-template-areas:
+    "header header"
+        "sidebar content"
+        "footer  footer";
+        background-color: #fff;
+        color: #444;
+    }
+
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+header img{
+  height: 10%;
+  width: 10%;
+}
+
+header
+ {
+  background-color: #999;
+}
+
+
+
+footer{ background-color: #999;}
+footer a{
+  color:aquamarine;
+  text-decoration: none;
+
+}
+h1 {
+    color: #AAA;
+    border-bottom: 1px solid;
+    margin-bottom: 0;
+    margin-left: 0.5em;
+    padding: 1%;
+}
+
+main {
+    color: #CCC;
+    margin-left: 0.5em;
+    padding: 5%;
+    border-left: 1px solid;
+}
+
+main p{
+  margin-left: 0.5em;
+    padding: 1%;
+}
+
+nav ul {
+     margin: 0;
+     padding: 0;
+     width: 5.5em;
+     background: white;
+     border: 1px solid;
+}
+
+nav li {
+     position: relative;
+     list-style: none;
+     margin: 0;
+     border-bottom: 1px solid #CCC;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 0;
+    left: 7em;
+    display: block;
+}
+
+nav li a {
+    display: block;
+    padding: 0.25em 0 0.25em 0.5em;
+    text-decoration: none;
+}
+
+nav li.submenu {
+    background: url(http://...submenu.gif) 95% 50% no-repeat;
+}
+
+nav li.submenu:hover {
+    background-color: #EDD;
+}
+
+nav ul.level1 li.submenu:hover ul.level2,
+nav ul.level2 li.submenu:hover ul.level3 {
+    display:block;
+}
+
+section h3{
+  margin: 1%;
+}
+
+section p{
+  font-size: 0.7em;
+}
+
+section ul{
+
+
+}
+
+section ul li{
+list-style: none;
+}
+
+ section.left {
+   float: left;
+           width: 38%;
+           font-family: sans-serif;
+           background-color: rgb(241, 241, 241);
+          color: black;
+           border: 2px solid black;
+           margin: 1%;
+           height: auto;
+           border-radius: 5px;
+  padding: 5px;
+  font-size: 0.8em;
+           }
+
+  section.right {
+           float: right;
+           width: 52%;
+           font-family: sans-serif;
+           font-style: italic;
+          background-color: rgb(241, 241, 241);
+          color: black;
+           border: 2px solid black;
+           margin: 1%;
+           height: auto;
+           border-radius: 5px;
+  padding: 5px;
+  font-size: 1em;
+           }
+
+.meat{
+  background-color: rgb(182, 108, 108)}
+
+
+.dairy{
+ background-color: rgb(255, 255, 204)}
+
+
+.veg{
+ background-color: rgb(201, 228, 126)}
